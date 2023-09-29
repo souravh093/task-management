@@ -15,16 +15,15 @@ const TaskCard = ({ task }) => {
     updatedTask = "archive";
   }
 
-
   return (
     <div className="bg-secondary/10 rounded-md p-5">
       <h1
         className={`text-lg font-semibold mb-3 ${
           task.priority === "high"
-            ? "bg-red-400 text-gray-200 px-3 rounded-md inline-block"
+            ? " text-red-400"
             : task.priority === "medium"
-            ? "bg-yellow-400 text-gray-200 px-3 rounded-md inline-block"
-            : "bg-green-400 text-gray-200 px-3 rounded-md inline-block"
+            ? " text-yellow-500 "
+            : " text-green-400 "
         }`}
       >
         {task?.title}
